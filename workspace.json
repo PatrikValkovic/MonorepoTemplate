@@ -1,0 +1,17 @@
+{
+    "$schema": "./node_modules/nx/schemas/workspace-schema.json",
+    "version": 2,
+    "projects": {
+        "backend": "apps/backend",
+        "be-business-logic": "libs/be-business-logic",
+        "be-data": "libs/be-data",
+        "be-graphql": "libs/be-graphql",
+        "components": "libs/components",
+        "fe-graphql": "libs/fe-graphql",
+        "fe-helpers": "libs/fe-helpers",
+        "frontend": "apps/frontend",
+        "helpers": "libs/helpers",
+        "hooks": "libs/hooks",
+        "server": "libs/server"
+    }
+}

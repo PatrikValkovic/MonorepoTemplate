@@ -1,0 +1,30 @@
+{
+  "extends": [
+    "plugin:@nrwl/nx/react",
+    "../../.eslintrc.js"
+  ],
+  "ignorePatterns": [
+    "!**/*",
+    ".storybook/**/*"
+  ],
+  "overrides": [
+    {
+      "files": [
+        "*.ts",
+        "*.tsx",
+        "*.js",
+        "*.jsx"
+      ],
+      "rules": {
+          "consistent-return": "off",
+          "@typescript-eslint/no-unused-vars": [
+              "error",
+              {
+                  "varsIgnorePattern": "React|^_",
+                  "argsIgnorePattern": "^_"
+              }
+          ]
+      }
+    }
+  ]
+}
